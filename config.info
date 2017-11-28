@@ -1,0 +1,32 @@
+[Audio]
+Engine = alsa
+InputSampleRate = 16000
+InputSampleWidth = 16
+InputChunksize = 1024
+OutputChunksize = 1024
+
+[STT]
+ActiveEngine = sphinx
+
+[TTS]
+Engine = baidu-tts
+
+[PocketSphinx]
+HmmDir = /usr/local/share/pocketsphinx/model/hmm/zh/tdt_sc_8k
+
+[Espeak]
+Voice = zh+f4
+PitchAdjustment = 40
+WordsPerMinute = 160
+
+[BaiduTTS]
+AppKey = qg4haN8b2bGvFtCbBGqhrmZy
+SecretKey = 585d4eccb50d306c401d7df138bb02e7
+Language = zh
+Timeout = 2
+
+[Mp3Player]
+Engine = pygame-player
+
+[Resource]
+Path = ~/resource
